@@ -14,22 +14,9 @@ for (let i = 0; i< 4; i++) {
 console.log(`2 == '2' is ${2 == '2'}`);     // true , 값은 같음
 console.log(`2 === '2' is ${2 === '2'}`);     // false  , 값은 같으니 자료형이 다름
 
-const fn = function () {
-    
-}
 
-console.log("자고싶어요"[0]);
-console.log("자고싶어요"[1]);
-console.log("자고싶어요"[2]);
-console.log("자고싶어요"[3]);
-console.log("자고싶어요"[4]);
-console.log("집에가고싶어요"[0]);
-console.log("집에가고싶어요"[1]);
-console.log("집에가고싶어요"[2]);
-console.log("집에가고싶어요"[3]);
-console.log("집에가고싶어요"[4]);
-console.log("집에가고싶어요"[5]);
-console.log("집에가고싶어요"[6]);
+
+
 
 
 
