@@ -1,11 +1,10 @@
 import './App.css';
-// import User from '../components/User';
-import User2 from '../components/User2';
+import Calculator from '../components/Calculator';
 
 function App() {
   return (
     <div className='card'>
-      <User2 />
+      <Calculator />
     </div>
   );
 }
