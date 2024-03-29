@@ -1,6 +1,6 @@
 import './App.css';
-import Header from '../todo_components/Header';
-import TodoList from '../todo_components/TodoList';
+import Header from '../todo_bs_components/Header';
+import TodoList from '../todo_bs_components/TodoList';
 import { useState } from 'react';
 
 function App() {

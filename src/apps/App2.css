@@ -1,0 +1,17 @@
+.photo {
+    width: 200px; height: 200px; border-radius: 100%;
+  }
+  
+  .card {
+    width: 300px; text-align: center; padding: 10px;
+    background-color: #ebebeb; border-radius: 20px;
+  }
+
+  .button{
+    font-size: 36px;
+    border: none;
+    border-radius: 5px;
+  }
+
+ 
+  

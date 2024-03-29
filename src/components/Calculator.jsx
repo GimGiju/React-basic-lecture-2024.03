@@ -31,30 +31,36 @@ export default function Calculator() {
   // JSX를 반환합니다.
   return (
     <div className="calculator">
+      <h1>계산기</h1>
       {/* input 요소를 사용하여 현재 입력값을 표시합니다. readOnly 속성을 사용하여 사용자 입력을 방지합니다. */}
       <input type="text" value={input} readOnly />
       {/* 버튼 그룹을 만듭니다. */}
       <div className="buttons">
         {/* 각 버튼은 클릭 이벤트에 대응하여 handleClick 함수를 호출합니다. */}
         {/* "C" 버튼을 클릭하면 handleClear 함수를 호출하여 입력값을 지웁니다. */}
-        <button onClick={() => handleClick('/')}>÷</button>
-        <button onClick={() => handleClear()}>C</button>
-        <button onClick={() => handleClick('7')}>7</button>
-        <button onClick={() => handleClick('8')}>8</button>
-        <button onClick={() => handleClick('9')}>9</button>
-        <button onClick={() => handleClick('*')}>x</button>
-        <button onClick={() => handleClick('4')}>4</button>
-        <button onClick={() => handleClick('5')}>5</button>
-        <button onClick={() => handleClick('6')}>6</button>
-        <button onClick={() => handleClick('-')}>-</button>
-        <button onClick={() => handleClick('1')}>1</button>
-        <button onClick={() => handleClick('2')}>2</button>
-        <button onClick={() => handleClick('3')}>3</button>
-        <button onClick={() => handleClick('+')}>+</button>
-        <button onClick={() => handleClick('0')}>0</button>
-        <button onClick={() => handleClick('.')}>.</button>
+        <button style={{color:'#EA8474', backgroundColor:'#959EA2'}} onClick={() => handleClear()}>C</button>
+        <button style={{color:'#8CF562', backgroundColor:'#959EA2'}} onClick={() => handleClick('/')}>÷</button>
+        <br />
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('7')}>7</button>
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('8')}>8</button>
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('9')}>9</button>
+        <button style={{color:'#8CF562', backgroundColor:'#959EA2'}} onClick={() => handleClick('*')}>x</button>
+        <br />
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('4')}>4</button>
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}}onClick={() => handleClick('5')}>5</button>
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('6')}>6</button>
+        <button style={{color:'#8CF562', backgroundColor:'#959EA2'}} onClick={() => handleClick('-')}>-</button>
+        <br />
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}}onClick={() => handleClick('1')}>1</button>
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('2')}>2</button>
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('3')}>3</button>
+        <button style={{color:'#8CF562', backgroundColor:'#959EA2'}} onClick={() => handleClick('+')}>+</button>
+        <br />
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('√')}>&radic;</button> 
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('0')}>0</button>
+        <button style={{color:'#ffffff', backgroundColor:'#616264'}} onClick={() => handleClick('.')}>.</button>
         {/* "=" 버튼을 클릭하면 handleCalculate 함수를 호출하여 계산 결과를 표시합니다. */}
-        <button onClick={() => handleCalculate()}>=</button>
+        <button style={{color:'#ffffff', backgroundColor:'#16AA52'}} onClick={() => handleCalculate()}>=</button>
       </div>
     </div>
   );

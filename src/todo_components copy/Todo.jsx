@@ -1,5 +1,6 @@
 import '../apps/App.css';
-import { FaRegTrashAlt } from "react-icons/fa";
+import { TbTrashOff } from "react-icons/tb";
+
 
 export default function Todo({todo, onUpdate, onDelete}) {
   const {id, work, status} = todo;
@@ -13,7 +14,7 @@ export default function Todo({todo, onUpdate, onDelete}) {
       <input type='checkbox' id={id} checked={status === 'completed'}
         onChange={handleChange} />
       <label htmlFor={id}>{work}</label>
-      <button onClick={handleDelete}><FaRegTrashAlt /></button>
+      <button onClick={handleDelete}><TbTrashOff /></button>
     </li>
   );
 }
